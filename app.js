@@ -18,6 +18,6 @@ app.post("/postt",function(req,res){
     console.log(req.body);
 })
 
-app.listen(9090,()=>{
+app.listen(process.env.PORT||9090,()=>{
     console.log("server is running");
 })
